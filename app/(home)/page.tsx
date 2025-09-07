@@ -1,6 +1,9 @@
 "use client";
 import Link from 'next/link';
 import { useEffect, useState, useRef } from 'react';
+import { BsStars } from "react-icons/bs";
+import { GoArrowRight } from "react-icons/go";
+import { MdOpenInNew } from "react-icons/md";
 
 // 需要轮换的词汇，可按需扩展（打字机效果）
 const KEYWORDS = ['主办活动', '参与活动', '认识朋友', '交友聊天', '探索未知'];
@@ -14,20 +17,24 @@ export default function HomePage() {
           {/* 顶部徽章 */}
           <div className="relative inline-flex">
             <div className="relative rounded-full bg-gradient-to-b from-white/10 to-white/0 p-[1px] shadow-sm">
-              <div className="flex items-center gap-4 rounded-full bg-fd-background/80 px-5 py-2 backdrop-blur text-sm text-fd-foreground/90">
-                <span className="flex items-center gap-1 rounded-full bg-fd-muted/30 px-2 py-0.5 text-[11px] font-medium text-fd-foreground/80">
-                  <span className="animate-pulse">✨</span> NEW
+              <div className="flex items-center gap-2 rounded-full bg-fd-background/80 px-4 py-2 backdrop-blur text-sm md:text-base text-fd-foreground/90">
+                <span className="relative flex items-center gap-1 rounded-full px-3 py-1 text-[12px] leading-none font-thin text-fd-foreground/90">
+                  <span aria-hidden className="absolute inset-0 rounded-full bg-blue-600/25 ring-1 ring-blue-400/40 shadow-[0_0_0_1px_rgba(255,255,255,0.06)] backdrop-blur-sm" />
+                  <span className="relative flex items-center gap-1">
+                    <BsStars className="animate-pulse text-blue-300 text-[14px]" />
+                    <span className="uppercase tracking-wide text-[11px] font-bold text-blue-100">New</span>
+                  </span>
                 </span>
-                <Link href="/docs" className="group flex items-center gap-1 font-medium hover:text-fd-foreground transition-colors">
-                  Telegram BOT 已经开始公测
-                  <span className="transition-transform group-hover:translate-x-0.5">→</span>
+                <Link href="/docs" className="group flex items-center gap-1 hover:text-fd-foreground transition-colors">
+                  <span className="text md:text-base">Telegram BOT 已经开始公测</span>
+                  <span className="transition-transform group-hover:translate-x-0.5 text-[16px] md:text-[18px]"><GoArrowRight /></span>
                 </Link>
               </div>
               {/* 发光环 */}
               <div className="pointer-events-none absolute inset-0 -z-10 rounded-full bg-blue-500/20 blur-md" />
             </div>
           </div>
-          <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-6xl">
+          <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
             <span className="block">一个人太孤寂？</span>
             <span className="block mt-2">快来LANKO{' '}
               <TypewriterWords words={KEYWORDS} />
@@ -40,8 +47,11 @@ export default function HomePage() {
             <Link href="/signin" className="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-blue-500 transition-colors">
               开始使用
             </Link>
-            <Link href="/docs" className="rounded-full bg-fd-muted px-6 py-3 text-sm font-semibold text-fd-foreground/90 hover:bg-fd-muted/80 transition-colors">
-              查看文档
+            <Link href="/docs" className="group rounded-full bg-fd-muted px-7 py-3 text-sm font-semibold text-fd-foreground/90 hover:bg-fd-muted/80 transition-colors inline-flex items-center gap-2 min-w-[150px] justify-center">
+              <span className="flex items-center gap-2">
+                <span>查看文档</span>
+                <MdOpenInNew className="text-base opacity-80 group-hover:opacity-100 transition-opacity" />
+              </span>
             </Link>
           </div>
         </div>
