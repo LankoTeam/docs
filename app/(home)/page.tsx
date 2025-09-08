@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from 'react';
 import { BsStars } from "react-icons/bs";
 import { GoArrowRight } from "react-icons/go";
 import { MdOpenInNew } from "react-icons/md";
+import { HighlightFeatures } from './HighlightFeatures';
 
 // 需要轮换的词汇，可按需扩展（打字机效果）
 const KEYWORDS = ['主办活动', '参与活动', '认识朋友', '交友聊天', '探索未知'];
@@ -12,7 +13,7 @@ export default function HomePage() {
 
   return (
     <main className="flex flex-1 flex-col justify-center text-center py-24">
-      <div className="mx-auto flex max-w-4xl flex-col items-center gap-8 px-4">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-4">
         <div className="space-y-6">
           {/* 顶部徽章 */}
           <div className="relative inline-flex">
@@ -53,6 +54,9 @@ export default function HomePage() {
                 <MdOpenInNew className="text-base opacity-80 group-hover:opacity-100 transition-opacity" />
               </span>
             </Link>
+          </div>
+          <div className="mt-8 sm:mt-12 lg:mt-16 mb-8 sm:mb-12">
+            <HighlightFeatures />
           </div>
         </div>
       </div>
