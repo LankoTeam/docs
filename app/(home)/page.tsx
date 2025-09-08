@@ -26,7 +26,7 @@ export default function HomePage() {
                     <span className="uppercase tracking-wide text-[11px] font-bold text-blue-600 dark:text-blue-100">New</span>
                   </span>
                 </span>
-                <Link href="/docs" className="group flex items-center gap-1 hover:text-fd-foreground transition-colors">
+                <Link href="https://t.me/lanko_development_bot" className="group flex items-center gap-1 hover:text-fd-foreground transition-colors">
                   <span className="text md:text-base">Telegram BOT 已经开始公测</span>
                   <span className="transition-transform group-hover:translate-x-0.5 text-[16px] md:text-[18px]"><GoArrowRight /></span>
                 </Link>
@@ -45,7 +45,7 @@ export default function HomePage() {
             在这里随时随地都可以发起你的活动，仅需几步，即可轻松搞定活动的组织与管理，让每一次聚会都充满乐趣与期待！
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-            <Link href="/signin" className="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-blue-500 transition-colors">
+            <Link href="https://www.lanko.space/signin" className="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-blue-500 transition-colors">
               开始使用
             </Link>
             <Link href="/docs" className="group rounded-full bg-fd-muted px-6 py-3 text-sm font-semibold text-fd-foreground/90 hover:bg-fd-muted/80 transition-colors inline-flex items-center gap-2">
