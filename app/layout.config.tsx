@@ -11,18 +11,27 @@ export const baseOptions: BaseLayoutProps = {
   nav: {
     title: (
       <>
-        <svg
-          width="24"
-          height="24"
-          xmlns="http://www.w3.org/2000/svg"
+        <img
+          src="/LANKO.svg"
+          className="inline-block mr-3 h-7 w-7"
+          width={30}
+          height={30}
+          alt="LANKO Logo"
           aria-label="Logo"
-        >
-          <circle cx={12} cy={12} r={12} fill="currentColor" />
-        </svg>
-        My App
+        />
+        LANKO
       </>
     ),
   },
   // see https://fumadocs.dev/docs/ui/navigation/links
-  links: [],
+  links: [
+    {
+      text: '快速上手',
+      url: '/getting-start',
+    },
+    {
+      text: 'API',
+      url: '/api/',
+    }
+  ],
 };
