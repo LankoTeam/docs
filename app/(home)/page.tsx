@@ -22,8 +22,8 @@ export default function HomePage() {
                 <span className="relative flex items-center gap-1 rounded-full px-3 py-1 text-[12px] leading-none font-thin text-fd-foreground/90">
                   <span aria-hidden className="absolute inset-0 rounded-full bg-blue-600/25 ring-1 ring-blue-400/40 shadow-[0_0_0_1px_rgba(255,255,255,0.06)] backdrop-blur-sm" />
                   <span className="relative flex items-center gap-1">
-                    <BsStars className="animate-pulse text-blue-300 text-[14px]" />
-                    <span className="uppercase tracking-wide text-[11px] font-bold text-blue-100">New</span>
+                    <BsStars className="animate-pulse text-blue-500 dark:text-blue-300 text-[14px]" />
+                    <span className="uppercase tracking-wide text-[11px] font-bold text-blue-600 dark:text-blue-100">New</span>
                   </span>
                 </span>
                 <Link href="/docs" className="group flex items-center gap-1 hover:text-fd-foreground transition-colors">
