@@ -48,11 +48,9 @@ export default function HomePage() {
             <Link href="/signin" className="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-blue-500 transition-colors">
               开始使用
             </Link>
-            <Link href="/docs" className="group rounded-full bg-fd-muted px-7 py-3 text-sm font-semibold text-fd-foreground/90 hover:bg-fd-muted/80 transition-colors inline-flex items-center gap-2 min-w-[150px] justify-center">
-              <span className="flex items-center gap-2">
-                <span>查看文档</span>
-                <MdOpenInNew className="text-base opacity-80 group-hover:opacity-100 transition-opacity" />
-              </span>
+            <Link href="/docs" className="group rounded-full bg-fd-muted px-6 py-3 text-sm font-semibold text-fd-foreground/90 hover:bg-fd-muted/80 transition-colors inline-flex items-center gap-2">
+              <span>查看文档</span>
+              <MdOpenInNew className="text-sm opacity-80 group-hover:opacity-100 transition-opacity" />
             </Link>
           </div>
           <div className="mt-8 sm:mt-12 lg:mt-16 mb-8 sm:mb-12">
