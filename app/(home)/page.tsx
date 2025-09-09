@@ -37,7 +37,7 @@ export default function HomePage() {
           </div>
           <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
             <span className="block">一个人太孤寂？</span>
-            <span className="block mt-2">快来LANKO{' '}
+            <span className="block mt-2">快来LANKO
               <TypewriterWords words={KEYWORDS} />
             </span>
           </h1>
@@ -48,7 +48,7 @@ export default function HomePage() {
             <Link href="https://www.lanko.space/signin" className="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-blue-500 transition-colors">
               开始使用
             </Link>
-            <Link href="/docs" className="group rounded-full bg-fd-muted px-6 py-3 text-sm font-semibold text-fd-foreground/90 hover:bg-fd-muted/80 transition-colors inline-flex items-center gap-2">
+            <Link href="/docs/getting-started" className="group rounded-full bg-fd-muted px-6 py-3 text-sm font-semibold text-fd-foreground/90 hover:bg-fd-muted/80 transition-colors inline-flex items-center gap-2">
               <span>查看文档</span>
               <MdOpenInNew className="text-sm opacity-80 group-hover:opacity-100 transition-opacity" />
             </Link>
@@ -124,7 +124,7 @@ function TypewriterWords({
     <span className="relative inline-flex items-center">
       <span className="relative mx-1 leading-none whitespace-nowrap font-semibold text-blue-500 pb-1 after:absolute after:left-0 after:bottom-0 after:h-[0.08em] after:w-full after:rounded-sm after:bg-blue-500/80">
         {display || '\u00A0'}
-  <span className="ml-0.5 inline-block w-[3px] sm:w-[4px] animate-pulse bg-blue-500/90 align-middle h-[1.4em] translate-y-0" style={{ animationDuration: '800ms' }} />
+  <span className="ml-0.5 inline-block w-[3px] sm:w-[4px] animate-pulse bg-blue-500/90 align-middle h-[1em] translate-y-0" style={{ animationDuration: '300ms' }} />
       </span>
     </span>
   );
