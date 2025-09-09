@@ -5,6 +5,7 @@ import { BsStars } from "react-icons/bs";
 import { GoArrowRight } from "react-icons/go";
 import { MdOpenInNew } from "react-icons/md";
 import { HighlightFeatures } from './HighlightFeatures';
+import { LogInCard } from './LogInCard';
 
 // 需要轮换的词汇，可按需扩展（打字机效果）
 const KEYWORDS = ['主办活动', '参与活动', '认识朋友', '交友聊天', '探索未知'];
@@ -55,6 +56,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8 sm:mt-12 lg:mt-16 mb-8 sm:mb-12">
             <HighlightFeatures />
+            <LogInCard />
           </div>
         </div>
       </div>
