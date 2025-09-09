@@ -73,7 +73,7 @@ function TypewriterWords({
   words,
   typeSpeed = 120,
   deleteSpeed = 60,
-  holdTime = 1200,
+  holdTime = 1800,
 }: TypewriterProps) {
   const [wordIndex, setWordIndex] = useState(0);
   const [display, setDisplay] = useState('');
@@ -124,7 +124,7 @@ function TypewriterWords({
     <span className="relative inline-flex items-center">
       <span className="relative mx-1 leading-none whitespace-nowrap font-semibold text-blue-500 pb-1 after:absolute after:left-0 after:bottom-0 after:h-[0.08em] after:w-full after:rounded-sm after:bg-blue-500/80">
         {display || '\u00A0'}
-        <span className="ml-0.5 inline-block w-[2px] animate-pulse bg-blue-500/90 align-middle h-[1em] translate-y-[2px] [animation-duration:0.5s]" />
+  <span className="ml-0.5 inline-block w-[3px] sm:w-[4px] animate-pulse bg-blue-500/90 align-middle h-[1.4em] translate-y-0" style={{ animationDuration: '800ms' }} />
       </span>
     </span>
   );
